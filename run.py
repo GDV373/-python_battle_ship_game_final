@@ -4,15 +4,15 @@ import random
 # Winning ASCII Design
 def you_win():
     print('''
-     /$$     /$$ /$$$$$$  /$$   /$$       /$$      /$$ /$$$$$$ /$$   /$$
-    |  $$   /$$//$$__  $$| $$  | $$      | $$  /$ | $$|_  $$_/| $$$ | $$
-     \  $$ /$$/| $$  \ $$| $$  | $$      | $$ /$$$| $$  | $$  | $$$$| $$
-      \  $$$$/ | $$  | $$| $$  | $$      | $$/$$ $$ $$  | $$  | $$ $$ $$
-       \  $$/  | $$  | $$| $$  | $$      | $$$$_  $$$$  | $$  | $$  $$$$
-        | $$   | $$  | $$| $$  | $$      | $$$/ \  $$$  | $$  | $$\  $$$
-        | $$   |  $$$$$$/|  $$$$$$/      | $$/   \  $$ /$$$$$$| $$ \  $$
-        |__/    \______/  \______/       |__/     \__/|______/|__/  \__/
-        ''')
+ /$$     /$$ /$$$$$$  /$$   /$$       /$$      /$$ /$$$$$$ /$$   /$$
+|  $$   /$$//$$__  $$| $$  | $$      | $$  /$ | $$|_  $$_/| $$$ | $$
+ \  $$ /$$/| $$  \ $$| $$  | $$      | $$ /$$$| $$  | $$  | $$$$| $$
+  \  $$$$/ | $$  | $$| $$  | $$      | $$/$$ $$ $$  | $$  | $$ $$ $$
+   \  $$/  | $$  | $$| $$  | $$      | $$$$_  $$$$  | $$  | $$  $$$$
+    | $$   | $$  | $$| $$  | $$      | $$$/ \  $$$  | $$  | $$\  $$$
+    | $$   |  $$$$$$/|  $$$$$$/      | $$/   \  $$ /$$$$$$| $$ \  $$
+    |__/    \______/  \______/       |__/     \__/|______/|__/  \__/
+    ''')
 
 
 # Start of game print-outs
@@ -43,7 +43,8 @@ def start_prints():
                                        Y8oooo8PP"'
                                         ~~~~~~
         ''')
-    print("You have 3 Turns. Locate the Enemy ship by guessing in which column and row it is, number from 1 to 5")
+    print("You have 3 Turns. Locate the Enemy ship by guessing in which "
+          "column and row it is, number from 1 to 5") 
 
 
 # Stored game code in def for easy new game looping
@@ -114,16 +115,18 @@ def game_code():
         # If the player has used all turns
         if turn_phase == 4:
             print("Game Over")
-            print(f"The battleship was located at row {ship_row + 1}, col {ship_col + 1}")
+            print(f"The location was at row{ship_row + 1}, col {ship_col + 1}") 
 
 
 def new_game_exit_loop():
     # After Game options to Restart game or exit
-    new_game = (str(input("Do you want to play another game? press Y for yes or N for NO  "))).upper()
+    new_game = (str(input("Do you want to play another game? press Y for yes "
+                          "or N for NO  "))).upper() 
 
     while new_game not in ("Y", "N"):
         print("Not a Valid Input!!")
-        new_game = (str(input("If you want to play another game press Y for yes or N for NO  "))).upper()
+        new_game = (str(input("If you want to play another game press Y for "
+                              "yes or N for NO  "))).upper() 
 
     if new_game == "Y":
         game_code()
