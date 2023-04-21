@@ -5,6 +5,8 @@ For my third Portfolio Project submitted as part of the Code Institute's Diploma
 
 - To view the repository on Github **[Click Here](https://github.com/GDV373/Python_Battle_Ship_Game)**.
 
+- To view the working python game **[Click Here](https://python-battle-ship.herokuapp.com/)**
+
 
 ## **Summary**
   This interactive game provides users with an easy way to 'fire cannonballs' at a computer ‘enemy’s fleet of ships’. The game is based on the well-known board game ‘Battleship’, to learn more about this game **[Click Here]( https://en.wikipedia.org/wiki/Battleship_game)**.
